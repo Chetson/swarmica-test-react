@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SelectContainer = styled.div`
     position: relative;
     width: 450px;
     height: 40px;
     max-width: 300px;
-`;
+`
 
 export const SelectHeader = styled.div<{ $isOpen: boolean }>`
     padding: 7px 12px;
@@ -19,12 +19,13 @@ export const SelectHeader = styled.div<{ $isOpen: boolean }>`
     align-items: center;
     transition: all 0.3s ease;
     border-color: ${props => (props.$isOpen ? '#1890ff' : '#ccc')};
-    box-shadow: ${props => (props.$isOpen ? '0 0 0 2px rgba(100, 108, 255, 0.2)' : 'none')};
+    box-shadow: ${props =>
+        props.$isOpen ? '0 0 0 2px rgba(100, 108, 255, 0.2)' : 'none'};
 
     &:hover {
         border-color: #1890ff;
     }
-`;
+`
 
 export const ArrowIcon = styled.span<{ $isOpen: boolean }>`
     display: flex;
@@ -34,7 +35,7 @@ export const ArrowIcon = styled.span<{ $isOpen: boolean }>`
     width: 16px;
     height: 16px;
     color: #666;
-`;
+`
 
 export const DropdownList = styled.ul`
     position: absolute;
@@ -50,7 +51,7 @@ export const DropdownList = styled.ul`
     z-index: 10;
     max-height: 200px;
     overflow-y: auto;
-`;
+`
 
 export const DropdownItem = styled.li<{ $isSelected: boolean }>`
     padding: 8px 12px;
@@ -61,4 +62,4 @@ export const DropdownItem = styled.li<{ $isSelected: boolean }>`
     &:hover {
         background-color: #f5f5f5;
     }
-`;
+`

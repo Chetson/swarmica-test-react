@@ -1,13 +1,11 @@
-import {useAppStore} from "./shared/store";
-import {useEffect} from "react";
-import ReactMarkdown from 'react-markdown';
-import {Categories, Locales, Search} from "./components";
+import { useAppStore } from './shared/store'
+import { useEffect } from 'react'
+import ReactMarkdown from 'react-markdown'
+import { Categories, Locales, Search } from './components'
 import styled from 'styled-components'
 
-
 function App() {
-
-    const {isLoaded, appBootstrap, articleBody} = useAppStore()
+    const { isLoaded, appBootstrap, articleBody } = useAppStore()
 
     useEffect(() => {
         appBootstrap()
@@ -18,16 +16,14 @@ function App() {
     return (
         <>
             <Header>
-                <Locales/>
-                <Categories/>
-                <Search/>
+                <Locales />
+                <Categories />
+                <Search />
             </Header>
             <main>
-                {
-                    articleBody !== null && <ReactMarkdown>
-                        {articleBody}
-                    </ReactMarkdown>
-                }
+                {articleBody !== null && (
+                    <ReactMarkdown>{articleBody}</ReactMarkdown>
+                )}
             </main>
         </>
     )
