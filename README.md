@@ -29,6 +29,8 @@ node -v # Should print "v23.10.0".
 # Verify npm version:
 npm -v # Should print "10.9.2".
 ```
+Установка через NVM - рекомендовано. Инструкция, а так же установочные файлы на сайте NVM для [windows](https://github.com/coreybutler/nvm-windows) и для [linux](https://github.com/nvm-sh/nvm) систем.
+
 
 - Установить в GoogleChrome [расширение](https://chromewebstore.google.com/detail/cors-unblock/hadoojkfknbjgoppkecpgamiajljiief) которое отключает CORS проверку, так как сервер не отдает нужные заголовки для работы на локальной машине, из-за этого API не работает как надо
 - Во вкладке с расширениями включить расширение
